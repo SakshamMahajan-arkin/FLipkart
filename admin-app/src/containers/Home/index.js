@@ -3,24 +3,14 @@ import { Jumbotron } from 'react-bootstrap';
 import Layout from '../../components/Layout';
 import { Row, Col ,Container} from 'react-bootstrap';
 import './style.css';
-
+import {NavLink} from 'react-router-dom'
 
 const Home = (props) => {
 
     return (
         <div>
-            <Layout />
-            <Container fluid>
-                <Row>
-                    <Col md={2} className="sidebar">
-                        Side Bar
-                    </Col>
-                    <Col md={10} style= {{marginLeft: 'auto'}}>
-                        Container
-                    </Col>
-                </Row>
-
-            </Container>
+            <Layout sidebar/>
+            
 
 
             {/* <Jumbotron style={{margin: '5rem',background: '#fff'}} className="text-center">
